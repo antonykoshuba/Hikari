@@ -52,9 +52,16 @@ body {
     flex-flow: column;
 }
 .screenshot {
-    border: 3px solid rgb(255, 204, 204);
+    border: none;
+    border-radius: 16px;
     background-color: #fff;
-    width: 98%;
-    margin-top: 16px;
-    margin-bottom: 8px;
+    width: 100%; 
+    overflow: hidden;
+}
+.copyright {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: #ccc;
+    margin-top: 16px;   
+    margin-bottom: 16px;
 }
