@@ -1,0 +1,22 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.hikari-mediika-grob-grob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-box {
+    margin-top: 26px;
+    margin-bottom: 26px;
+    min-height: calc(100vh - 26px * 2);
+    border: 3px solid rgb(255, 204, 204);
+    background-color: rgb(255, 247, 236);
+    border-radius: 16px;
+    max-width: 1024px;
+    margin-left: 26px;
+    margin-right: 26px;
+    width: calc(100vw - 26px * 2);
+    min-width: calc(360px - 26px * 2);
+}
