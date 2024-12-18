@@ -19,4 +19,32 @@ body {
     margin-right: 26px;
     width: calc(100vw - 26px * 2);
     min-width: calc(360px - 26px * 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.heading {
+    border: 3px solid rgb(255, 204, 204);
+    background-color: rgb(154, 165, 205);
+    border-radius: 16px;
+    max-width: 600px;
+    margin: 8px;
+    margin-top: 16px;
+    min-height: 160px;
+    min-width: 300px;
+    width: calc(100% - 16px);
+    overflow: hidden;
+}
+.mediabox-item {
+    border: 3px solid rgb(255, 204, 204);
+    background-color: rgb(229, 255, 226);
+    border-radius: 16px;
+    max-width: 600px;
+    margin: 8px;
+    min-height: 160px;
+    min-width: 300px;
+    width: calc(100% - 16px);
+    overflow: hidden;
+
 }
