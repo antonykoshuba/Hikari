@@ -46,5 +46,15 @@ body {
     min-width: 300px;
     width: calc(100% - 16px);
     overflow: hidden;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.screenshot {
+    border: 3px solid rgb(255, 204, 204);
+    background-color: #fff;
+    width: 98%;
+    margin-top: 16px;
+    margin-bottom: 8px;
 }
