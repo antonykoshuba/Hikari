@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     background: #000;
+    font-family: 'Courier New', Courier, monospace;
 }
 #myVideo {
     position: fixed;
@@ -60,6 +61,12 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+.text {
+    width: 70%;
+    padding-top: 26px;
+    padding-bottom: 26px;
 }
 .screenshot {
     border: none;
