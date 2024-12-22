@@ -759,7 +759,7 @@
                 <div class="caption text">Сумма</div>
                 <div class="volume text">30$</div>
                 <div class="caption text">Сумма в баксах</div>
-                <div class="dollars text"><span class="price"30></span>$</div>
+                <div class="dollars text"><span class="price">30</span>$</div>
                 <div class="caption text">Дата займа</div>
                 <div class="date text">13.11.2023</div>
                 <div class="caption text">Возвращено</div>
@@ -826,6 +826,18 @@
                 </div>
             </div>
 
+
+            <div class="mediabox-item">
+                <div class="caption text">Наворовано уже:</div>
+                <div class="debtcounter" id="debtcounter">
+                    
+                </div>
+                <div class="caption text">Возвращено?</div>
+                <div class="returnedcounter" id="returnedcounter">
+                    
+                </div>
+            </div>
+
             <audio controls>
                 <source src="audio/bye.ogg" type="audio/ogg">
                 Зверёк задёргался в клетке
@@ -836,7 +848,47 @@
                 <a href="https://t.me/psy21d">@psy21d</a>
             </div>
         </div>
+
+        <!-- Отзывы -->
+        <div class="content-box">
+            <div class="mediabox-item">
+                <div class="text">
+                    <span style="font-weight: bold" class="whois"></span>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+
     </div>
+    <script>
+        let debtEl = document.getElementById("debtcounter");
+        let returnedEl = document.getElementById("returnedcounter");
+        let debts = document.getElementsByClassName("price");
+        let returned = document.getElementsByClassName("pricereturned");
+        window.debts = debts;
+        window.returned = returned;
+
+        let debtSize = 0;
+        for (let d = 0; d < debts.length; d++) {
+            console.log(d);
+            let debtItem = parseFloat(debts[d].textContent);
+            console.log(debtItem);
+            debtSize = debtSize + debtItem;
+            console.log("Наворовано уже: " + debtSize);
+        }
+        debtSize = Math.floor(debtSize);
+        debtEl.textContent = debtSize + '$';
+
+        let retSize = 0;
+        for (let d = 0; d < returned.length; d++) {
+            let retItem = parseFloat(returned[d].textContent);
+            retSize = retSize + retItem;
+        }
+        retSize = Math.floor(retSize);
+        returnedEl.textContent = retSize + '$';        
+    </script>
     <script>
         let myVideo = null;
             myVideo = document.getElementById("myVideo");
